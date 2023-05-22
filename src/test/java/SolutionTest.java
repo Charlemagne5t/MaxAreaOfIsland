@@ -26,6 +26,34 @@ public class SolutionTest {
         };
         Assert.assertEquals(0, new Solution().maxAreaOfIsland(grid));
     }
+    @Test
+    public void maxAreaOfIslandTest3() {
+        int[][] grid = {
+                {1,1,0,0,0},
+                {1,1,0,0,0},
+                {0,0,0,1,1},
+                {0,0,0,1,1}
+        };
+        Assert.assertEquals(4, new Solution().maxAreaOfIsland(grid));
+    }
+    @Test
+    public void maxAreaOfIslandTest4() {
+        int[][] grid = {
+                {1,0,0},
+                {0,1,1},
+        };
+        Assert.assertEquals(2, new Solution().maxAreaOfIsland(grid));
+    }
+
+    @Test
+    public void maxAreaOfIslandTest5() {
+        int[][] grid = {
+                {1}
+        };
+        Assert.assertEquals(1, new Solution().maxAreaOfIsland(grid));
+    }
+
+
 }
 
 
